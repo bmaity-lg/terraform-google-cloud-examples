@@ -1,14 +1,14 @@
 # Configure the Google Cloud provider
 provider "google" {
   project = "terraform-examples-gcloud"
-  region  = "us-east1-b"
+  region  = "europe-west2"
 }
 
 # Create a Google Compute instance
 resource "google_compute_instance" "example" {
   name          = "example"
   machine_type  = "f1-micro"
-  zone          = "us-east1-b"
+  zone          = "europe-west2-b"
   
   boot_disk {
     initialize_params {
